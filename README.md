@@ -2,7 +2,7 @@
 
 
 
-![image-20200829231544412](C:\Users\naube\AppData\Roaming\Typora\typora-user-images\image-20200829231544412.png)
+![image-20200829231544412](C:\Users\naube\OneDrive\Documents\git\GazeboROSFirstRobot\image-20200829231544412.png)
 
 This project uses a [Gazebo](http://gazebosim.org/#features) simulation platform to create a mobile Robot with C++ Nodes in ROS to chase white colored balls!!
 
@@ -16,7 +16,7 @@ You could   modify the Robot design on https://mymodelrobot.appspot.com/
 
 The Robot has one camera and one Lidar sensor
 
-![image-20200829232538734](C:\Users\naube\AppData\Roaming\Typora\typora-user-images\image-20200829232538734.png)
+![image-20200829232538734](C:\Users\naube\OneDrive\Documents\git\GazeboROSFirstRobot\image-20200829232538734.png)
 
 
 
