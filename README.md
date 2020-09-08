@@ -2,13 +2,19 @@
 
 Link of vídeo https://www.youtube.com/watch?v=eQeoTbMQ3ME
 
-![image-20200908133548258](C:\Users\naube\AppData\Roaming\Typora\typora-user-images\image-20200908133548258.png)
+![image-20200908133548258](image-20200908133548258.png)
 
 
 
 The world map nauber5.world is used in this task 
 
 
+
+![image-20200908134403716](image-20200908134403716.png)
+
+
+
+![](C:\Users\naube\SecondRobot\nauber5.png)
 
 
 
