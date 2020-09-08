@@ -1,4 +1,54 @@
-## **Gazebo ROS Ball Chaser**
+## **Gazebo ROS  Where AM I and Ball Chaser**
+
+Link of vídeo https://www.youtube.com/watch?v=eQeoTbMQ3ME
+
+![image-20200908133548258](C:\Users\naube\AppData\Roaming\Typora\typora-user-images\image-20200908133548258.png)
+
+
+
+The world map nauber5.world is used in this task 
+
+
+
+
+
+## File  AMCL.launch
+
+`<launch>`
+`<!-- TODO: Add nodes here -->`
+`<arg name="map_file" default="/home/workspace/catkin_ws/src/my_robot/maps/nauber5.yaml"/>`
+`<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />`
+
+
+
+
+`<node name="amcl" pkg="amcl" type="amcl" output="screen">`
+
+  `<param name="odom_frame_id" value="odom"/>`
+  `<param name="odom_model_type" value="diff-corrected"/>`
+  `<param name="base_frame_id" value="robot_footprint"/>`
+  `<param name="global_frame_id" value="map"/>`
+
+
+    <!-- If you choose to define initial pose here -->
+    <param name="initial_pose_x" value="5"/>
+    <param name="initial_pose_y" value="5"/>/
+`</node>`
+ `<node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">`
+      `<param name="base_global_planner" value="navfn/NavfnROS" />`
+      `<param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>` 
+
+  `<rosparam file="/home/workspace/catkin_ws/src/my_robot/config/costmap_common_params.yaml" command="load" ns="global_costmap" />`
+  `<rosparam file="/home/workspace/catkin_ws/src/my_robot/config/costmap_common_params.yaml" command="load" ns="local_costmap" />`
+  `<rosparam file="/home/workspace/catkin_ws/src/my_robot/config/local_costmap_params.yaml" command="load" />`
+  `<rosparam file="/home/workspace/catkin_ws/src/my_robot/config/global_costmap_params.yaml" command="load" />`
+  `<rosparam file="/home/workspace/catkin_ws/src/my_robot/config/base_local_planner_params.yaml" command="load" />`
+
+`</node>`
+
+`</launch>`
+
+
 
 
 
