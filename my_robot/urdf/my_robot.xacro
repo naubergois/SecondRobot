@@ -6,6 +6,16 @@
   <link name="robot_footprint"></link>
 
 
+ <joint name="camera_optical_joint" type="fixed">
+  <origin xyz="0 0 0" rpy="-1.5705 0 -1.5707"/>
+  <parent link="camera"/>
+  <child link="camera_link_optical"/>
+ </joint>
+
+ <link name="camera_link_optical">
+ </link>
+
+
   <link name='camera'>
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0"/>
